@@ -17,6 +17,11 @@
     font-size: 60px;
 }
 
+#titlebar::selection{
+    color: crimson;
+    background-color: gold;
+}
+
 #fromdate{
     font-family: Baloo, 'Baloo Bhai 2', cursive;
     grid-area: fromdate;
