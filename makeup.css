@@ -143,3 +143,8 @@ label::selection{
     color: black;
     background-color: yellow;
 }
+
+input:focus{
+    border: 0;
+    outline: none;
+}
