@@ -138,3 +138,8 @@
     background: linear-gradient(to right,black, grey, black);
     display: none;
 }
+
+label::selection{
+    color: black;
+    background-color: yellow;
+}
