@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Fee</title>
+    <style rel="stylesheet" href="makeup.css"></style>
+</head>
+<body>
+    <div class="mainframe">
+        <div id="titlebar">Newspaper Fee</div>
+        <input type="text" id="normalrateEntry" placeholder="Daily Newspaper Rate in (₹)">
+        <input type="text" id="weekendrateEntry" placeholder="Weekend Newspaper Rate in (₹)">
+        <input type="date" id="fromdate" date-formart="dd-mm-yyyy">
+        <input type="date" id="todate" date-formart="dd-mm-yyyy">
+        <button id="calculateAmount">Calculate</button>
+        <label id="messageScreen"></label>
+        <label id="alldates">Result will flash soon...</label>
+
+        <div class="days" id="days_area">
+            <button id="monday" class="days-button">Monday</button>
+            <button id="tuesday" class="days-button">Tuesday</button>
+            <button id="wednesday" class="days-button">Wednesday</button>
+            <button id="thursday" class="days-button">Thursday</button>
+            <button id="friday" class="days-button">Friday</button>
+            <button id="saturday" class="days-button">Saturday</button>
+            <button id="sunday" class="days-button">Sunday</button>
+        </div>
+
+        <button id="printPage">P R I N T</button>
+    </div>
+    <script href="functionality.js" defer></script>
+</body>
+</html>

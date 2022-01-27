@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap');
+
+.mainframe{
+    margin: auto;
+    display: grid;
+    width: fit-content;
+    height: auto;
+    border-radius: 10px;
+    padding: 5px;
+    grid-template-areas: 'titlebar titlebar' 'normalrateEntry weekendrateEntry' 'fromdate todate' 'calculateAmount calculateAmount' 'messageScreen messageScreen' 'alldates alldates' 'days days' 'printPage printPage';
+}
+
+#titlebar{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: titlebar;
+    text-align: center;
+    font-size: 60px;
+}
+
+#fromdate{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: fromdate;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#todate{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: todate;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#normalrateEntry{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: normalrateEntry;
+    border: none;
+    background-color: aqua;
+    margin-right: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#normalrateEntry::placeholder{
+    color: black;
+}
+
+#weekendrateEntry{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: weekendrateEntry;
+    border: none;
+    background-color: aqua;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#weekendrateEntry::placeholder{
+    color: black;
+}
+
+#calculateAmount{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: calculateAmount;
+    border: none;
+    font-size: 25px;
+    background-color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#messageScreen{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: messageScreen;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#alldates{
+    font-family: Baloo, 'Baloo Bhai 2', cursive;
+    grid-area: alldates;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.days{
+    grid-area: days;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.days-button{
+    color: white;
+    background: linear-gradient(to right,red,black);
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#printPage{
+    grid-area: printPage;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(to right,black, grey, black);
+    display: none;
+}
